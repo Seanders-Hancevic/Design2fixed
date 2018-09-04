@@ -1,0 +1,48 @@
+body {
+  background: #494b4c;
+  display: grid;
+  font-family: 'Sonsie One', cursive;
+  color: white;
+}
+
+header {
+  padding: 50px 200px 0;
+}
+
+main {
+  margin: 50px auto;
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+
+main img {
+  width: 200px;
+  height: 100px;
+  border-radius: 12px;
+  grid-column: span 2;
+}
+
+@media only screen and (min-width: 850px) {
+  main {
+    margin: 50px auto;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    margin: 50px auto;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 8px;
+  }
+}
